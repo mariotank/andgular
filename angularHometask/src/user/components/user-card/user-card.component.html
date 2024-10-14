@@ -1,1 +1,27 @@
-<p>user-card works!</p>
+<p>User name is {{ userName }}</p>
+<table>
+  <tbody>
+  <tr>
+    <td>First name</td>
+    <td>{{ user.firstName }}</td>
+  </tr>
+  <tr>
+    <td>Last name</td>
+    <td>{{ user.lastName }}</td>
+  </tr>
+  <tr>
+    <td>Age</td>
+    <td>{{ user.age }}</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>{{ user.gender }}</td>
+  </tr>
+  <tr>
+    <td>Activated</td>
+    <td><input readonly value="{{user.activated?'Active':'Inactive'}}"></td>
+  </tr>
+  </tbody>
+</table>
+<button (click)="onActivateClick()">{{user.activated?'Deactivate':'Activate'}}</button>
+<button (click)="onDeleteClick()">Delete</button>

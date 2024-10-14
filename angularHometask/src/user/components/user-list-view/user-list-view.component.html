@@ -1,3 +1,6 @@
-<p>user-list-view works!</p>
-
-{{users|json}}
+<p>{{ label }}</p>
+{{user|json}}
+<app-user-card
+  [user]="user"
+  (deleteCurrentUser)="onDeleteClick()">
+</app-user-card>
