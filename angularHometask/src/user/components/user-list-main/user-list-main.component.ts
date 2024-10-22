@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Gender, User} from "../../model/user";
 import {UserListViewComponent} from "../user-list-view/user-list-view.component";
 
@@ -12,7 +12,7 @@ import {UserListViewComponent} from "../user-list-view/user-list-view.component"
   styleUrl: './user-list-main.component.css'
 })
 export class UserListMainComponent {
-  users: User[] = [{firstName: "first", lastName: "last", age: 80, gender: Gender.Male, activated: true}];
+  users: User[] = [{firstName: "first", lastName: "last", age: 80, gender: Gender.Male, activated: false}];
 }
 
 
